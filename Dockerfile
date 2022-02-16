@@ -57,7 +57,7 @@ RUN groupadd group \
   && echo 'User Created'
 
 ARG GECKO_VER=2.47.2
-ARG MONO_VER=7.0.0
+ARG MONO_VER=7.1.1
 
 RUN mkdir -p /usr/share/wine/{gecko,mono} \
   && curl -sL -o /usr/share/wine/gecko/wine-gecko-${GECKO_VER}-x86.msi \
